@@ -33,7 +33,7 @@ function App() {
   }, [])
 
   let routes = createHashRouter([{
-    path: "", element: <Layout />, errorElement: <ErrorPage />, children: [
+    path: "", element: <Layout />,children: [
       { index: true, element: <ProtectedRoutes><Home /></ProtectedRoutes> },
       { path: "products", element: <ProtectedRoutes><Products /></ProtectedRoutes> },
       { path: "cart", element: <ProtectedRoutes><Cart /></ProtectedRoutes> },
