@@ -54,7 +54,7 @@ function FeaturedProducts() {
                       <p className='text-main'>{product.title.split(" ").slice(0, 3).join(" ")}</p>
                       <p>{(product.description.split(" ").slice(0, 4).join(" "))}</p>
                       <div className='d-flex justify-content-between p-1'>
-                        <p>price: {product.price}</p>
+                        <p>price2: {product.price}</p>
                         <p>{product.ratingsAverage}<i className="fa-solid fa-star rating-color"></i></p>
                       </div>
                     </Link>
