@@ -46,7 +46,7 @@ function Cart() {
           <div className='container bg-body-secondary' style={{ padding: '100px' }}>
             <h2 className=''>Shop Cart : </h2>
             <div className='d-flex justify-content-between m-3'>
-              <h4 className='text-main'><span>Total Price:</span>{showCartItem.data.totalCartPrice}</h4>
+              <h4 className='text-main'><span>Total Price:</span>{showCartItem?.data?.totalCartPrice}</h4>
               <Link className='btn bg-main text-white' to={`/checkout/${showCartItem?.data?._id}`}>Checkout</Link>
             </div>
             {showCartItem.data.products.map((product) =>
