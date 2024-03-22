@@ -67,7 +67,9 @@ function Products() {
                 </Link>
                 <div className='d-flex'>
                   <button onClick={() => addtCart(product.id)} className='btn btn-success bg-main text-white text-center w-100'>Add To Cart</button>
-                  <button className='btn' onClick={() => addWishlist(product.id);handleClick()}}><i className="heart fa-solid fa-heart fs-3"></i></button>
+                  <button className='btn border-0' style={{
+                        color: isActive ? 'red' : '',
+                      }} onClick={() => { addWishlist(product.id); handleClick() }} ><i className="heart fa-solid fa-heart fs-3"></i></button>
                 </div>
               </div>
             </div>
